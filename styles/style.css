@@ -15,9 +15,6 @@
   color: #4a4a4a;
   font-size: 2rem; }
 
-.filter-gold {
-  filter: invert(66%) sepia(58%) saturate(495%) hue-rotate(355deg) brightness(85%) contrast(87%); }
-
 body {
   color: rgba(74, 74, 74, 0.7);
   width: 100%; }
@@ -230,7 +227,10 @@ footer {
     list-style: none;
     padding-left: 0; }
     footer ul img {
+      filter: invert(66%) sepia(58%) saturate(495%) hue-rotate(355deg) brightness(85%) contrast(87%);
       width: 50px; }
+    footer ul img:hover {
+      filter: invert(0%) sepia(54%) saturate(7500%) hue-rotate(5deg) brightness(90%) contrast(107%); }
   footer a {
     text-decoration: none;
     color: rgba(74, 74, 74, 0.7);

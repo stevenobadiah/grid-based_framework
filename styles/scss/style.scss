@@ -29,10 +29,6 @@ $breakpoints: (
     'large': 1200px,
 ) !default;
 
-.filter-gold {
-    filter: invert(66%) sepia(58%) saturate(495%) hue-rotate(355deg) brightness(85%) contrast(87%);
-}
-
 body {
     color: $odin-text;
     width: 100%;
@@ -303,7 +299,11 @@ footer {
         list-style: none;
         padding-left: 0;
         img {
+            filter: invert(66%) sepia(58%) saturate(495%) hue-rotate(355deg) brightness(85%) contrast(87%);
             width: 50px;
+        }
+        img:hover {
+            filter: invert(0%) sepia(54%) saturate(7500%) hue-rotate(5deg) brightness(90%) contrast(107%);
         }
     }
     a {
