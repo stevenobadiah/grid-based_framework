@@ -7,14 +7,35 @@ $odin-blue: #6abfc3;
 $odin-text: rgba(74,74,74,0.7);
 $odin-text-dark: #4a4a4a;
 
+%button-format {
+    color: white;
+    border-radius: 5%;
+    border: none;
+    height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 60px;
+}
+
+%section-heading {
+    font-weight: bold;
+    color: $odin-text-dark;
+    font-size: 2rem;
+}
+
 $breakpoints: (
     'small': 767px,
     'medium': 992px,
     'large': 1200px,
 ) !default;
 
+.filter-gold {
+    filter: invert(66%) sepia(58%) saturate(495%) hue-rotate(355deg) brightness(85%) contrast(87%);
+}
+
 body {
     color: $odin-text;
+    width: 100%;
 }
 
 nav {
@@ -67,15 +88,9 @@ nav {
         margin-bottom: 80px;
     }
     button {
+        @extend %button-format;
         background-color: $odin-blue;
-        color: white;
-        border-radius: 5%;
-        border: none;
-        height: 70px;
-        font-size: 20px;
-        font-weight: bold;
         margin-bottom: 40px;
-        padding: 0 60px;
     }
     button:hover {
         background-color: #83cdd1;
@@ -89,9 +104,8 @@ nav {
     text-align: center;
     padding-bottom: 100px;
     h2 {
-        font-weight: bold;
+        @extend %section-heading;
         margin: 130px 0 70px 0;
-        color: $odin-text-dark;
     }
     p {
         font-size: 24px;
@@ -142,10 +156,8 @@ nav {
     text-align: center;
     width: 100%;
     h2 {
-        font-weight: bold;
-        margin: 130px 0 70px 0;
-        color: $odin-text-dark;
-        margin-top: 100px;
+        @extend %section-heading;
+        margin: 100px 0 70px 0;
     }
     ul {
         padding: 0 20px;
@@ -181,15 +193,9 @@ nav {
         }
     }
     button {
+        @extend %button-format;
         background-color: $odin-gold;
-        color: white;
-        border-radius: 5%;
-        border: none;
-        height: 70px;
-        font-size: 20px;
-        font-weight: bold;
         margin: 20px 0 60px 0;
-        padding: 0 60px;
     }
     button:hover {
         background-color: #e4b76f;
@@ -224,10 +230,8 @@ nav {
     width: 100%;
     background-color: rgb(245, 245, 245);
     h2 {
-        font-weight: bold;
-        margin: 130px 0 70px 0;
-        color: $odin-text-dark;
-        margin-top: 100px;
+        @extend %section-heading;
+        margin: 100px 0 70px 0;
     }
     #successStoriesContainer {
         .success-story {
@@ -264,15 +268,9 @@ nav {
         margin-bottom: 50px;
     }
     button {
+        @extend %button-format;
         background-color: $odin-blue;
-        color: white;
-        border-radius: 5%;
-        border: none;
-        height: 70px;
-        font-size: 20px;
-        font-weight: bold;
         margin: 20px 0 60px 0;
-        padding: 0 60px;
     }
     button:hover {
         background-color: #83cdd1;
