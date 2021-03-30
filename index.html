@@ -65,49 +65,49 @@
         <section id="languageTiles">
             <h2>Learn everything you need to know to become a web developer</h2>
             <ul id="languageTilesContainer">
-                <a class="languageTile" href="#">
+                <a class="language-tile" href="#">
                     <li>
                         <img src="images/html-css.svg" alt="HTML and CSS">
                         <h3>HTML + CSS</h3>
                     </li>
                 </a>
-                <a class="languageTile" href="#">
+                <a class="language-tile" href="#">
                     <li>
                         <img src="images/javascript.svg" alt="Javascript">
                         <h3>Javascript</h3>
                     </li>
                 </a>
-                <a class="languageTile" href="#">
+                <a class="language-tile" href="#">
                     <li>
                         <img src="images/git.svg" alt="Git">
                         <h3>Git</h3>
                     </li>
                 </a>
-                <a class="languageTile" href="#">
+                <a class="language-tile" href="#">
                     <li>
                         <img src="images/databases.svg" alt="Databases">
                         <h3>Databases</h3>
                     </li>
                 </a>
-                <a class="languageTile" href="#">
+                <a class="language-tile" href="#">
                     <li>
                         <img src="images/ruby.svg" alt="Ruby">
                         <h3>Ruby</h3>
                     </li>
                 </a>
-                <a class="languageTile" href="#">
+                <a class="language-tile" href="#">
                     <li>
                         <img src="images/ror.svg" alt="Ruby on Rails">
                         <h3>Ruby On Rails</h3>
                     </li>
                 </a>
-                <a class="languageTile" href="#">
+                <a class="language-tile" href="#">
                     <li>
                         <img src="images/node.svg" alt="NodeJS">
                         <h3>NodeJS</h3>
                     </li>
                 </a>
-                <a class="languageTile" href="#">
+                <a class="language-tile" href="#">
                     <li>
                         <img src="images/getting-hired.svg" alt="Getting Hired">
                         <h3>Getting Hired</h3>
@@ -120,34 +120,42 @@
         </section>
         <section id=successStories>
             <h2>Success Stories</h2>
-            <div id="successStoriesContainer">
-                <div class="success_story">
-                    <img src="images/phil.jpg" alt="Phil Profile Pic">
-                    <a class="successLink" href="#">
-                        <h4>Phil Dirdeck</h4>
-                    </a>
-                    <p>TOP was a perfect match for my learning style. Not walking me through an entire project but actually forcing me to figure it out on my own, by pointing me...</p>
+            <div class="row" id="successStoriesContainer">
+                <div class="col-lg-6 col-md-12 success-story">
+                    <img class="rounded-circle" src="images/phil.jpg" alt="Phil Profile Pic">
+                    <div class="success-story-text">
+                        <a class="successLink" href="#">
+                            <h4>Phil Dirdeck</h4>
+                        </a>
+                        <p>TOP was a perfect match for my learning style. Not walking me through an entire project but actually forcing me to figure it out on my own, by pointing me...</p>
+                    </div>
                 </div>
-                <div class="success_story">
-                    <img src="images/susan.jpg" alt="Susan Profile Pic">
-                    <a class="successLink" href="#">
-                        <h4>Susan Suzzannee</h4>
-                    </a>
-                    <p>Before I found TOP, I was jumping from Coursera course to Coursera course without really any guidance or community. I wanted to get a real development job and not operating...</p>
+                <div class="col-lg-6 col-md-12 success-story">
+                    <img class="rounded-circle" src="images/susan.jpg" alt="Susan Profile Pic">
+                    <div class="success-story-text">
+                        <a class="successLink" href="#">
+                            <h4>Susan Suzzannee</h4>
+                        </a>
+                        <p>Before I found TOP, I was jumping from Coursera course to Coursera course without really any guidance or community. I wanted to get a real development job and not operating...</p>
+                    </div>
                 </div>
-                <div class="success_story">
-                    <img src="images/vurtov.jpg" alt="Vurtov Profile Pic">
-                    <a class="successLink" href="#">
-                        <h4>Vurtov Guspachev</h4>
-                    </a>
-                    <p>Before I started the Odin Project I had literally ZERO programming experience. After almost exactly a year of working through the program, I was offered a job as a front...</p>
+                <div class="col-lg-6 col-md-12 success-story">
+                    <img class="rounded-circle" src="images/vurtov.jpg" alt="Vurtov Profile Pic">
+                    <div class="success-story-text">
+                        <a class="successLink" href="#">
+                            <h4>Vurtov Guspachev</h4>
+                        </a>
+                        <p>Before I started the Odin Project I had literally ZERO programming experience. After almost exactly a year of working through the program, I was offered a job as a front...</p>
+                    </div>
                 </div>
-                <div class="success_story">
-                    <img src="images/jeff.jpg" alt="Jeff Profile Pic">
-                    <a class="successLink" href="#">
-                        <h4>Jeff</h4>
-                    </a>
-                    <p>The Odin Project changed my life and that is not an understatement. In November 2013, I made a commitment to myself to become a self-taught developer so I threw myself...</p>
+                <div class="col-lg-6 col-md-12 success-story">
+                    <img class="rounded-circle" src="images/jeff.jpg" alt="Jeff Profile Pic">
+                    <div class="success-story-text">
+                        <a class="successLink" href="#">
+                            <h4>Jeff</h4>
+                        </a>
+                        <p>The Odin Project changed my life and that is not an understatement. In November 2013, I made a commitment to myself to become a self-taught developer so I threw myself...</p>
+                    </div>
                 </div>
             </div>
             <a id="moreSuccessStories" href="#">Read more success stories</a>
@@ -156,12 +164,12 @@
                 Sign Up
             </button>
         </section>
-        <footer>
-            <div id="pageLogo">
+        <footer class="row">
+            <a href="#" class="col-xl-4 d-lg-none d-md-none d-sm-none d-none d-xl-flex navbar-brand">
                 <img src="images/odin.svg">
-                <p>The Odin Project</p>
-            </div>
-            <ul id="socialMedias">
+                <span>The Odin Project</span>
+            </a>
+            <ul class="col-xl-4 col-lg-4 col-md-6 col-sm-12" id="socialMedias">
                 <li>
                     <a class="social_media_link" href="#">
                         <img src="images/github.svg" alt="Github Logo">
@@ -183,19 +191,21 @@
                     </a>
                 </li>
             </ul>
-            <table>
-                <tr>
-                    <td><a href="#">About</a></td>
-                    <td><a href="#">Success Stories</a></td>
-                <tr>
-                    <td><a href="#">FAQ</a></td>
-                    <td><a href="#">Contribute</a></td>
-                </tr>
-                <tr>
-                    <td><a href="#">Blog</a></td>
-                    <td><a href="#">Terms</a></td>
-                </tr>
-            </table>
+            <div class="col-xl-4 col-lg-4 col-md-6 d-sm-none d-none d-md-flex" id="tableContainer">
+                <table>
+                    <tr>
+                        <td><a href="#">About</a></td>
+                        <td><a href="#">Success Stories</a></td>
+                    <tr>
+                        <td><a href="#">FAQ</a></td>
+                        <td><a href="#">Contribute</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Blog</a></td>
+                        <td><a href="#">Terms</a></td>
+                    </tr>
+                </table>
+            </div>
         </footer>
     </main>
 </body>

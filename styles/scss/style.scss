@@ -71,11 +71,11 @@ nav {
         color: white;
         border-radius: 5%;
         border: none;
-        width: 350px;
         height: 70px;
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 40px;
+        padding: 0 60px;
     }
     button:hover {
         background-color: #83cdd1;
@@ -185,11 +185,11 @@ nav {
         color: white;
         border-radius: 5%;
         border: none;
-        width: 250px;
         height: 70px;
         font-size: 20px;
         font-weight: bold;
         margin: 20px 0 60px 0;
+        padding: 0 60px;
     }
     button:hover {
         background-color: #e4b76f;
@@ -215,3 +215,118 @@ nav {
             }
         }
 */
+
+#successStories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    h2 {
+        font-weight: bold;
+        margin: 130px 0 70px 0;
+        color: $odin-text-dark;
+        margin-top: 100px;
+    }
+    #successStoriesContainer {
+        .success-story {
+            padding: 0 40px;
+            margin-bottom: 125px;
+            img {
+                width: 100px;
+                height: 100px;
+                float: left;
+            }
+            .success-story-text {
+                padding-left: 120px;
+                text-align: left;
+                a {
+                    text-decoration: none;
+                    color: $odin-gold;
+                }
+                p {
+                    font-size: 24px;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+    #moreSuccessStories {
+        color: $odin-text;
+        font-size: 22px;
+        margin-bottom: 75px;
+    }
+    h5 {
+        font-size: 44px;
+        font-weight: lighter;
+        letter-spacing: 2px;
+        margin-bottom: 50px;
+    }
+    button {
+        background-color: $odin-blue;
+        color: white;
+        border-radius: 5%;
+        border: none;
+        height: 70px;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px 0 60px 0;
+        padding: 0 60px;
+    }
+    button:hover {
+        background-color: #83cdd1;
+    }
+}
+
+footer {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .navbar-brand {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    span {
+        color: $odin-gold;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 30%;
+        list-style: none;
+        padding-left: 0;
+        img {
+            width: 50px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $odin-text;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    a:hover {
+        color: black;
+    }
+    #tableContainer {
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        float: right;
+        table {
+            width: 350px;
+        }
+        td {
+            padding: 10px 20px;
+        }
+    }
+}
